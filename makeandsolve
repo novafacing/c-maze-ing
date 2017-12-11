@@ -1,0 +1,4 @@
+#! /bin/bash
+
+./generator.exe > maze2
+./solvemaze maze2
