@@ -12,3 +12,4 @@ and then
 generator.exe > <maze_name_here>
 And then solve the maze with 
 ./solvemaze <maze_name>
+'''
