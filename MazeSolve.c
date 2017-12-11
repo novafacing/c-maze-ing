@@ -15,7 +15,7 @@ int y_dimension;
 
 bool solve(int row, int col, char maze[y_dimension][x_dimension + 1]) {
 	/* Returns false if it goes outside the bounds or starts on something other than a space.
-	 * This is NOT the checker for an unsolveable maze. Rather, this checks for an invalid start point.
+	 * This is NOT the checker for an unsolveable maze. Rather, this checks for invalids.
 	 */
 	if (row < 0 || col < 0 || row >= rows || col >= cols || maze[row][col] != ' ') {
 		return false;
@@ -48,7 +48,7 @@ bool solve(int row, int col, char maze[y_dimension][x_dimension + 1]) {
 		return true;
 	}
 	
-	/*maze[row][col] = ' '; */
+	/*maze[row][col] = ' '; */ /* <-- swap to this one if you want just the solution path */
 	maze[row][col] = '0';
 	return false;
 }
